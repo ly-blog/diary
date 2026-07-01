@@ -1,0 +1,25 @@
+DYYYY-MM-DD,<int.[1-7]:weekDay>[;<strg.en:description>,...] W<strg.zh:weather>[,<strg.zh:weatherDetail>,...];{midnight,am,noon,pm} #when
+K<strg.UTF-8:keywords>[,...] #key noun,verbs,adj from body
+L<strg.en:location>[,...] #where
+P<strg.en:people>[,...] #who
+
+<strg.zh:body> #what,why,how
+[:space:]@{L,P,C}<strg.en:identifier>. #label 1st appearance of each (main) location/person/company
+#valid identifier: $tr -dc [:alnum:]|grep -v _
+#TODO: ^- repair: F_0 original family need underscore
+
+--e.g.-- 
+2026/04/21 D2,birthday Wcloud,light;am
+K词语1,spaced key2,key3 #comma separated
+LH.HKG.LYKL #home
+PF.F.F_1.F,S.P.M.CKH.F.M #Family.Father.Family_Foster.Father(grandpa); School.Primary.schoolMate.CKH.Family.Mother
+
+... home@LH.HKG.LYKL ...
+... 公公@PF.F.F_1.F ...
+... M记@CMcDonald's ...
+
+--reserved char in body--
+eval $(printf 'grep -r --fixed-strings%s' "$(printf %s ' ~ @ # ^ * [ ] { } |'|sed 's/ / -e \\/g')")
+
+--notes-- 
+midnight is am. new day start at first sleep

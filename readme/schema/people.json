@@ -1,0 +1,127 @@
+{"_comment":"_:fullName. 'X_' as subscript to describe X. No space.","data":{
+
+"O":{
+ "_":"other"
+},
+
+"F":{
+ "_":"family",
+ "C":"child",
+ "F":"father",
+ "M":"mother",
+ "S":"sibling"
+},
+
+"S":{
+ "_":"school",
+ "_comment":"grouped by: {schoolMate,Staff,Teacher}. <Gender>;<Description> inside.",
+
+ "K":{
+  "_":"kindergarten",
+  "CKG":{
+   "piano":{
+    "T":{}
+   },
+   "mat":{
+    "M":{}
+   }
+  },
+  "HKG":{
+   "SFC":{
+    "M":{
+
+     "CKH":"F;陈加希,redGlass",
+     "CTY":"M;陈天佑",
+     "Scotty":"M;吴骆谦"
+
+    },
+    "T":{}
+   }
+  },
+  "SZX":{
+   "box":{
+    "S":{},
+    "T":{}
+   }
+  }
+ },
+
+ "P":{
+  "_":"primary",
+  "M":{
+
+   "CKH":"M;钱景昊",
+   "Gordon":"M",
+   "LY":"M",
+   "Oliver":"M",
+   "Ryan":"M",
+   "WZH":"M;温子谦",
+   "Z":"F"
+
+  },
+  "S":{},
+  "T":{
+
+   "C":"F;曹,english,P1",
+   "F":"F;冯,math,P5-6",
+   "H":"F;何,chinese,blame",
+   "K":"M;关,pe,discipline",
+   "L":"F;李,math,seven"
+
+  }
+ },
+
+ "S":{
+  "_":"secondary",
+  "M":{
+
+   "Arron":"M;李景康",
+   "CL":"M;蔡略",
+   "H":"F;陈",
+   "Rico":"M;陆",
+   "Rocky":"M;黄",
+   "Thomas":"M;陈",
+   "Tony":"M;王",
+   "WCY":"M;黄政研,SLRCamera",
+   "WKK":"M;王国钦",
+   "WKY":"M;王君贤",
+   "WKN":"M;黄君毅",
+   "Xylo":"M"
+
+  },
+  "S":{},
+  "T":{
+
+   "C":"F:陈,chinese,F1",
+   "KongGo":"M:江,chem,F4-6",
+   "Li":"F:李,math,F4-6",
+   "Liu":"F:廖,music",
+   "M":"M:莫,phy,F3",
+   "N":"F:吴,music",
+   "Penny":"F:邝,LS,F4-6",
+   "T":"M:邓,phy,F4-6"
+
+  }
+ },
+
+ "U":{
+  "_":"university",
+  "M":{
+
+   "Anson":"M",
+   "earphone":"M;engClass,Y2",
+   "glass":"M;engClass,rushRoutineAsMe,Y3",
+   "neijin":"M;engClass,Y1",
+   "omask":"M;orangeWiredMask,mathClass",
+   "table":"M;tableTennisClass,Y1T2",
+   "William":"M;physics"
+
+  },
+  "S":{},
+  "T":{}
+ }
+
+
+}
+
+}}

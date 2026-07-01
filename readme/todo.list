@@ -1,0 +1,27 @@
+#---diary-db_LY.sh---
+x set schema for format: (W)eather, (D)ay, slashed date, location, human. by 5w1h.
+v complete schema/location.json
+v complete schema/people.json
+x add '_grep' for custom field (e.g. other) in schema/*.json
+x set keyword,description field rule
+x replace '_' with camelCase in schema/location.json
+
+#---./sh/validate-at-tag.sh---
+x use cmd of 'valid identifier' in schema/diary.schema
+x validate is in schema/company.json
+x validate is in schema/location.json
+x validate is in schema/people.json
+
+##function
+x create template: form input, matched schema
+x archive: $tar -r to a large tar, filename: [incremented index].diary.
+x search: $cat .tar |tr -cs '[:print:]' '\n' |grep -e '^.*txt$' -e <body/schemaHeader>
+x sorting: use /tmp/diary-db_LY.run/ as uncompressed or compressing tmpfs. Sort by my date.
+
+#---
+x merge diary of ./time/ to diary, then $rm -d ./time
+
+#---howCmdWork---
+v append: does tar break existing .tar if error occur. If yes, for function:compress, tar to /tmp/ and mv if no error
+## not breaking
+

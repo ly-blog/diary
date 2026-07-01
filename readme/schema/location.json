@@ -1,0 +1,65 @@
+{"_comment":"_:fullName. {IATA,postalAddress,description(~)}. No space.","data":{
+
+"O":{
+ "_":"other",
+ "_comment":"<postalInstituteLocation>.postalAddress. e.g. HK.XXXStreet.XXXBdg"
+},
+
+"R":{
+ "_":"repo",
+ "HKG":{
+   "IIC":"International_Industrial_Centre_2-8_Kwei_Tei_Street",
+   "VIB": "Vigor_Industrial_Building_49-53_Ta_Chuen_Ping_Street",
+   "WFIC": "Well_Fung_Industrial_Centre_68_Ta_Chuen_Ping_Street"
+ }
+},
+
+"H":{
+ "_":"home",
+ "HKG":{
+  "LYKL":"Luen_Yuet_House_Kwai_Luen_Estate",
+  "FTT":"Fo_Tan_Tsuen"
+ },
+ "CKG":{
+  "piazza":"Ba_Yu_Da_Dao",
+  "school":"~beside_school",
+  "narrow":"~handshake_building"
+ }
+},
+
+"S":{
+ "_":"school",
+ "K":{
+  "_":"kindergarten",
+  "CKG":{
+   "piano":"~classroom_piano",
+   "mat":"~rolling_mat"
+ },
+  "HKG":{
+   "SFC":"Suen_Fong_Chung_Nursery_Sui_Wo_Court"
+  },
+  "SZX":{
+   "box":"~box_on_head"
+  }
+ },
+ "P":{
+  "_":"primary",
+  "HKG":{
+   "PLKSHS":"Plk_Siu_Hon_Sum_Primary_School_Sui_Wo_Court"
+  }
+ },
+ "S":{
+  "_":"secondary",
+  "HKG":{
+   "BLMCSS":"Baptist_Lui_Ming_Choi_Secondary_School_Lek_Yuen_Estate"
+  }
+ },
+ "U":{
+  "_":"university",
+  "HKG":{
+    "CUHK":"The_Chinese_University_Of_Hong_Kong"
+  }
+ }
+}
+
+}}
